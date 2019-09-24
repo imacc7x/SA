@@ -9,7 +9,7 @@ import firebase from './firebase';
 import ShowSeccessPage from './ShowSeccessPage';
 import seccessPage from './images/seccessPage.png';
 import DownloadFile from './DownloadFile';
-import TestAlert from './TestAlert';
+import ReportOrderPage from './ReportOrderPage';
 import './CSS/setImg.css';
 
 
@@ -32,7 +32,8 @@ function App() {
           <Route path='/Order'    component = {InputInfo} />
           <Route path='/Confirm'  component = {ShowSeccessPage} />
           <Route path='/Check'  component = {DownloadFile} />
-
+          <Route path='/Report' component = {ReportOrderPage} /> 
+      
           
 
         </Switch>

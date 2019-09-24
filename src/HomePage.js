@@ -5,6 +5,7 @@ import orderIcon from './images/orderIcon.png';
 import headerPink from './images/headerPink.png';
 import shopName from './images/shopName.png';
 import footPink from './images/footWelcomePage.png';
+import {Button} from 'antd';
 import './CSS/setImg.css';
 
 class HomePage extends React.Component {
@@ -17,8 +18,11 @@ class HomePage extends React.Component {
 
                 <img src={headerPink} id ="setBG" />
 
-                <Link to = "/Order">      <img src={orderIcon} id = "logoOrder" />  </Link>
+                <Link to = "/Order"> <img src={orderIcon} id = "logoOrder" />  </Link>
                 <Link to = "/Check"> <img src={checkIcon} id = "logoCheck" />  </Link>
+                <div className="ReportPageButton">
+                    <Link to = "/Report"> <Button> report</Button> </Link>
+                </div>
 
                 <img src = {footPink} id = "setBG" />
 
